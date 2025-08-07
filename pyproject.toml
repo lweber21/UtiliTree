@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools >= 77.0.3"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "UtiliTree"
+version = "0.0.1"
+authors = [
+  { name="Leah L. Weber", email="lweber21@gmail.com" },
+]
+description = "A utility toolkit to for tumor clone trees."
+readme = "README.md"
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = "MIT"
+license-files = ["LICEN[CS]E*"]
+
+dependencies = [
+  "networkx",
+  "pandas",
+]
+
+[project.urls]
+Homepage = "https://github.com/lweber21/UtiliTree"
+
+[project.scripts]
+enumerate = "utilitree.enumerate:main"
